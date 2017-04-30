@@ -1,0 +1,134 @@
+/*Color Scheme
+---------------
+red: #FF392B
+black: #090809
+grey: #403F4C
+yellow: #F9DC5C
+white: #FFF8F0
+-------------------*/
+body{
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/circles-and-roundabouts.png");
+    margin-top: 4%;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #090809;
+}
+#title{
+    color:#FFF8F0;
+    font-family: 'Press Start 2P', cursive;
+}
+#topBar{
+    background: #F9DC5C;
+    color: #090809;
+    align-self: stretch;
+    font-weight:bold;
+    padding: 1rem 2rem 0 2rem;
+    text-align: center;
+}
+#topBar>ul {
+    padding: 1em 0 1em 0;
+}
+#topBar>ul {
+
+}
+#topBar>ul>li{
+    display: inline;
+    padding: 1.5rem 10rem 1.5rem 10rem;
+    margin: 0 3em 0 3em;
+    border: 2px solid #403F4C;
+    background: #403F4C;
+    color: #FFF8F0;
+    cursor:pointer;
+    border-radius: 50px;
+}
+#topBar>ul>li:last-child{
+    border: 2px solid #FF392B;
+    background: #FF392B;
+    color: #FFF8F0;
+}
+#topBar>ul>li:nth-child(2){
+    border: 2px solid #FFF8F0;
+    background: #FFF8F0;
+    color: #090809;
+}
+#contents{
+    background: #403F4C;
+    align-self: stretch;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+}
+#contents:empty{
+    display:none;
+}
+.feed{
+    background: #FFF8F0 ;
+    color: #090809;
+    text-align: left;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1em 0 1em 0;
+    position: relative;
+    font-family: 'Macondo', cursive;
+}
+.pic{
+    margin-right: 1%;
+    height:50px;
+    width: 50px;
+}
+.name{
+    font-weight: bold;
+}
+.indi{
+    position: absolute;
+    height: 20px;
+    width:20px;
+    border-radius: 100%;
+    top: 1em;
+    right: 1em;
+}
+.lnk2{
+    color: #090809;
+}
+.lnk:hover,.lnk2:hover,.lnk:active,.lnk2:active,.lnk:focus,.lnk2:focus{
+    text-decoration: none;
+    color: #090809;
+}
+.lnk{
+    margin-right: 1em;
+}
+.disabledFeed{
+    pointer-events: none;
+    opacity: 0.4;
+}
+@media screen and (max-width:470px){
+    #topBar>ul>li{
+        padding:0.5em;
+        margin:0.5%;
+    }
+}
+@media screen and (min-width:471px) and (max-width:700px){
+    #topBar>ul>li{
+        padding:1em;
+        margin:2%;
+    }
+}
+@media screen and (min-width:701px) and (max-width:900px){
+    #topBar>ul>li{
+        padding: 1.5em 2em 1.5em 2em;
+        margin:3%;
+    }
+}
+@media screen and (min-width:901px) and (max-width:1199px){
+    #topBar>ul>li{
+        padding: 1.5em 3em 1.5em 3em;
+        margin:3%;
+    }
+}
+@media screen and (max-width:431px){
+    #title{
+        font-size: 12px;
+    }
+}
