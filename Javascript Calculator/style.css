@@ -27,7 +27,7 @@ tr.display>td{
 	font-weight: bold;
 	font-size: 1.4em;
 }
-tr.keys>td{
+.key{
 	padding: 10px 0 10px 0;
 	margin: 10px;
 	font-weight: bold;
@@ -36,8 +36,15 @@ tr.keys>td{
 	box-shadow: 
 		inset -1px 0px 11px 9px rgba(58, 62, 60, 0.23),
 		0 5px 0 #9e9e9e;
+	transition: all 0.05s;
+	cursor: pointer;
 }
 .fa{
 	position: absolute;
     margin: 6px auto;
+}
+.pressed{
+	box-shadow: 
+		inset -3px -20px 11px 9px rgba(58, 62, 60, 0.23),
+		0 1px 0 #9e9e9e;
 }
