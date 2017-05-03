@@ -1,11 +1,12 @@
-/*Resets*/
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 html,body{
 	margin:0;
 	padding:0;
 	text-align: center;
+	font-family: 'Orbitron', sans-serif;
 }
 table{
-	border: 2px solid #0000ff;
+	border: 2px solid #cbcbde;
 	text-align: center;
 	color:#000;
 	margin: 10em auto;
@@ -13,17 +14,30 @@ table{
 	width:50%;
 	border-collapse: separate;
 	border-spacing: 1em 1em;
+	background: #f5fbf5;
+	border-radius: 15px;
 }
 tr.display>td{
 	height:50px;
 	width:100%;
 	border:1px solid #000;
 	padding: 15px 2px 15px 2px;
+	background: dimgrey;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.4em;
 }
 tr.keys>td{
 	padding: 10px 0 10px 0;
 	margin: 10px;
 	font-weight: bold;
 	font-size: 1.2em;
-	border: 1px solid #ff0000;
+	border: 1px solid #cbcbde;
+	box-shadow: 
+		inset -1px 0px 11px 9px rgba(58, 62, 60, 0.23),
+		0 5px 0 #9e9e9e;
+}
+.fa{
+	position: absolute;
+    margin: 6px auto;
 }
