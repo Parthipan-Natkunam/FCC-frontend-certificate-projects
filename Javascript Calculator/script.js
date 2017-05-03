@@ -8,8 +8,16 @@ function getInput(){
 	});
 	switch(this.dataset.number){
 		case "=":
-			display.innerHTML = eval(display.innerHTML);
-			break;
+			if(!!display.innerHTML){
+				var isDecimal = String(eval(display.innerHTML)).indexOf('.')>=0;
+				if(isDecimal) display.innerHTML = eval(display.innerHTML).toFixed(7);
+				else display.innerHTML = eval(display.innerHTML);
+				break;
+			}
+			else{
+				display.innerHTML = '';
+				break;
+			}
 		case "C":
 			display.innerHTML = '';
 			break;
@@ -19,4 +27,3 @@ function getInput(){
 }
 
 btns.forEach(btn => btn.addEventListener('click',getInput));
-
