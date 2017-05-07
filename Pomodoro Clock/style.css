@@ -10,6 +10,10 @@ body{
 	margin:0;
 	padding:0;
 	background: var(--black);
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
 }
 .clock{
 	width:100vw;
@@ -24,6 +28,7 @@ body{
 	border:2px solid var(--yellow);
 	border-radius: 50%;
 	animation: pulsor 1s infinite ;
+	cursor: pointer;
 }
 .clock-inner{
 	width:90%;
@@ -77,6 +82,7 @@ button{
 	font-size: 1.3em;
 	padding: 10px;
 	transition: all 0.5s ease;
+	cursor: pointer;
 }
 button:hover,button:focus{
 	background: var(--blue);
@@ -89,6 +95,9 @@ button:active{
 }
 .clock>div:last-child>h2{
 	color: var(--red);
+}
+.controls>h2,.work>h3,.break>h3{
+	cursor: default;
 }
 @media screen and (max-width: 527px){
 	.clock{
