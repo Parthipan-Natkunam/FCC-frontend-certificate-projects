@@ -13,6 +13,7 @@ const sessionPlusBtn = document.querySelector('#wPlus');
 const sessionMinusBtn = document.querySelector('#wMinus');
 const breakPlusBtn = document.querySelector('#bPlus');
 const breakMinusBtn = document.querySelector('#bMinus');
+const clock = document.querySelector('.clock-rim');
 
 function addMinutes(isBreak=false){
 	if(isBreak) {
@@ -53,5 +54,6 @@ sessionPlusBtn.addEventListener('click',()=>addMinutes());
 breakPlusBtn.addEventListener('click',()=>addMinutes(true));
 sessionMinusBtn.addEventListener('click',()=>subMinutes());
 breakMinusBtn.addEventListener('click',()=>subMinutes(true));
+clock.addEventListener('click',()=>updateFillColor());
 
 //setInterval(updateFillColor,1000);
